@@ -1,0 +1,42 @@
+1) Scaffold Gatsby Project with Material-Kit-React Starter
+https://www.gatsbyjs.org/starters/WebCu/gatsby-material-kit-react/
+
+2) Replace src Folder in the Scaffolded Project with the src Folder from material-kit-pro-react
+
+3) Deal with Some Incompatibility Issues (something to do with versioning of react/react-dom/gatsby)
+https://github.com/gatsbyjs/gatsby/issues/19827
+https://github.com/gatsbyjs/gatsby/issues/14862
+
+------------------------
+> gatsby develop
+
+The above error occurred in the <StoreStateProvider> component:
+    in StoreStateProvider
+    in App
+------------------------
+
+- uninstall then reinstall in the following order: react/react-dom/gatsby
+
+4) Add a pages Folder w. wrapper javascript for  
+
+- Gatsby looks here to load the actual "views"
+
+5) Add Sass Process npm Scripts from material-kit-pro-react => gatsby proj 
+
+---------------------------------------
+    "compile-sass": "node-sass src/assets/scss/material-kit-pro-react.scss src/assets/css/material-kit-pro-react.css",
+    "minify-sass": "node-sass src/assets/scss/material-kit-pro-react.scss src/assets/css/material-kit-pro-react.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/scss/material-kit-pro-react.scss src/assets/css/material-kit-pro-react.css --source-map true"
+---------------------------------------
+
+- i.e. in package.json
+
+6) Add Gulp Scripts For Adding License in Production Build Bundle
+
+- install gulp@4.0.2 & gulp-append-prepend@1.0.8 as devDependencies
+- transfer gulp file
+- update the build script to include gulp task
+
+7) Update Optional Dependencies to Match that of material-kit-pro-react
+
+8) Add the .eslintignore and .eslintrc.js from material-kit-pro-react

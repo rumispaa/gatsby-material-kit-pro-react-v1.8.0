@@ -1,6 +1,9 @@
 import React from "react";
-import LandingPage from "./LandingPage/LandingPage";
+import Layout from "components/Layout/Layout";
+import LandingPage from "views/LandingPage/LandingPage";
 
 export default () => (
-  <LandingPage/>
+  <Layout>
+    <LandingPage />
+  </Layout>
 );

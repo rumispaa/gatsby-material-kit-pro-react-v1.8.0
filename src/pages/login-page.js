@@ -1,6 +1,9 @@
 import React from "react";
-import LoginPage from "./LoginPage/LoginPage";
+import Layout from "components/Layout/Layout";
+import LoginPage from "views/LoginPage/LoginPage";
 
 export default () => (
-  <LoginPage/>
+  <Layout>
+    <LoginPage />
+  </Layout>
 );

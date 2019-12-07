@@ -1,6 +1,9 @@
 import React from "react";
-import ProfilePage from "./ProfilePage/ProfilePage";
+import Layout from "components/Layout/Layout";
+import ProfilePage from "views/ProfilePage/ProfilePage";
 
 export default () => (
-  <ProfilePage/>
+  <Layout>
+    <ProfilePage />
+  </Layout>
 );
