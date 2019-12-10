@@ -40,3 +40,8 @@ The above error occurred in the <StoreStateProvider> component:
 7) Update Optional Dependencies to Match that of material-kit-pro-react
 
 8) Add the .eslintignore and .eslintrc.js from material-kit-pro-react
+
+9) Decouple Code from React Router
+
+- implement page based navigation (pages/) instead of react router based navigation
+- import Link component from "gatsby" instead of "react-router" 
